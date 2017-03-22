@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+       $( "#datepicker" ).datepicker({ minDate: 0 });
+      } );
+    </script>
+    <script src="js/scripts.js"></script>
+    <title>Appointment</title>
+  </head>
+  <body>
+    <div id="wrapper">
+    <h1>Make an appointment with Dr. Code</h1>
+    <form class="appointmentform">
+      <input id="name" type="text" name="name" placeholder="Name"></input>
+      <input id="reason" type="text" name="reason" placeholder="Reason"></input>
+      <input type="text" id="datepicker" placeholder="Select Date"></input>
+      <select class="hour" name="hour">
+        <option selected="selected" disabled>Hour</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select> <span>:</span>
+      <select class="min" name="min">
+        <option selected="selected" disabled>Minute</option>
+        <option value="00">00</option>
+        <option value="15">15</option>
+        <option value="30">30</option>
+        <option value="45">45</option>
+      </select>
+      <select class="ampm" name="ampm">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+      <!-- <input id="start-time" type="time" name="start-time"></input>
+      <input id="end-time" type="time" name="end-time"></input> -->
+      <input type="submit" value="Submit"></input>
+    </form>
+    <div class="apptinfo">
+      <p>
+
+      </p>
+    </div>
+  </body>
+</html>

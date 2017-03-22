@@ -1,0 +1,19 @@
+.appointmentform input {
+  display: block;
+}
+
+.ui-datepicker {
+  background-color: white !important;
+  font-size: 20px !important;
+  padding: 5px !important;
+  margin-left: 30px !important;
+}
+.ui-icon {
+  margin: 10px !important;
+  cursor: pointer !important;
+}
+.ui-datepicker-calendar td span,
+.ui-datepicker-calendar td a,
+.ui-datepicker-calendar tr span{
+  margin: 15px !important;
+}
